@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106549244-1"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-106549244-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wistrongh=device-wistrongh, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--<link rel="icon" href="../../favicon.ico"> -->
+
+    <title>NIPS 2018 Workshop: Critiquing and Correcting Trends in Machine Learning</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="grid.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="dist/js/bootstrap.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+});
+</script>
+
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div class="page-header">
+        <h1>Critiquing and Correcting Trends in Machine Learning <small>NIPS 2018 Workshop</small></h1>
+        <p class="lead"><em>Organizers:</em> <span data-toggle="tooltip" title="University of Oxford">Yee&nbsp;Whye&nbsp;Teh</span>, <span data-toggle="tooltip" title="Microsoft Research">Rich&nbsp;Caruana</span>, <span data-toggle="tooltip" title="University of Oxford">Benjamin&nbsp;Bloem-Reddy</span>, <span data-toggle="tooltip" title="Alan Turing Institute">Brooks&nbsp;Paige</span>, <span data-toggle="tooltip" title="University of Oxford">Matt&nbsp;J.&nbsp;Kusner</span>, <span data-toggle="tooltip" title="University of Oxford">Tom&nbsp;T.&nbsp;Rainforth</span></p>
+        <h4>December 7, 2018 - Palais des Congrès de Montréal, Montréal, CANADA</h4>
+      </div>
+	 
+  <div class="jumbotron jumbotron-fluid">
+  		<div class="container">
+    	<h2>Call for Papers</h2>
+    	<p class="lead"><small><mark><u>Deadline</u>: October 23, 2018</mark></small></p>
+    	<p class="lead">
+    	<!--We call for papers that critically examine current common practices and/or trends in methodology, datasets, empirical standards, publication models, or any other aspect of machine learning research. -->
+      <p>The one day NIPS 2018 Workshop on Critiquing and Correcting Trends in Machine Learning calls for papers that critically examine current common practices and/or trends in methodology, datasets, empirical standards, publication models, or any other aspect of machine learning research. Though we are happy to receive papers that bring attention to problems for which there is no clear immediate remedy, we particularly encourage papers which propose a solution or indicate a way forward.  Papers should motivate their arguments by describing gaps in the field. Crucially, this is not a venue for settling scores or character attacks, but for moving machine learning forward as a scientific discipline.</p>
+
+        <p>To help guide submissions, we have split up the call for papers into the follows tracks.  Please indicate the intended track when making your submission.  Papers are welcome from all subfields of machine learning.  If you have a paper which you feel falls within the remit of the workshop but does not clearly fit one of these tracks, please contact the organizers at: ml.critique.correct@gmail.com.</p>
+
+        <p><b>Bad Practices</b> (1-4 pages)<br />
+        Papers that highlight common bad practices or unjustified assumptions at any stage of the research process.  These can either be technical shortfalls in a particular machine learning subfield, or more procedural bad practices of the ilk of those discussed in [17].</p>
+
+        <p><b>Common Misconceptions</b> (3-4 pages)<br/>
+        Papers that call into question commonly held intuitions or provide clear evidence either for or against assumptions that are regularly taken for granted without proper justification. For example, we would like to see papers which provide empirical assessments to test out metrics, verify intuitions, or compare popular current approaches with historic baselines that may have unfairly fallen out of favour (see e.g. [2]).  We would also like to see work which provides results which makes us rethink our intuitions or the assumptions we typically make.</p>
+
+<p><b>Negative Results</b> (3-4 pages)<br />
+Papers which show failure modes of existing algorithms or suggest new approaches which one might expect to perform well but which do not.  The aim of the latter of these is to provide a venue for work which might otherwise go unpublished but which is still of interest to the community, for example by dissuading other researchers from similar ultimately unsuccessful approaches.  Though it is inevitably preferable that papers are able to explain why the approach performs poorly, this is not essential if the paper is able to demonstrate why the negative result is of interest to the community in its own right.</p>
+
+<p><b>Research Process</b> (2-4 pages)<br />
+Papers which provide carefully thought through critiques, provide discussion on or suggest new approaches to areas such as the conference model, the reviewing process, the role of industry in research, open sourcing of code and data, institutional biases and discrimination in the field, research ethics, reproducibility standards, and allocation of conference tickets.  
+
+<p><b>Debates</b> (1-2 pages)
+Short proposition papers which discuss issues either affecting all of machine learning or significantly sized subfields (e.g. reinforcement learning, Bayesian methods, etc).  Selected papers will be used as the basis for instigating online forum debates before the workshop, leading up to live discussions on the day itself.</p>
+
+<p><b>Open Problems</b> (1-2 papers/short talks)<br />
+Papers that describe either (a) unresolved questions in existing fields that need to be addressed (b) desirable operating characteristics for ML in particular application areas that have yet to be achieved or (c) new frontiers of machine learning research that require rethinking current practices (e.g., error diagnosis for when many ML components are interoperating within a system, automating dataset collection/creation).</p>
+
+      
+        <p><b>Submission Instructions</b><br />
+        Papers should be submitted as pdfs using the <a href="https://nips.cc/Conferences/2018/PaperInformation/StyleFiles" role="button">NIPS LaTeX style file</a>.  Author names do not need to be anonymized and page limits do not include references.  Appendices are allowed after the references but reviewers will not be obliged to read them.</p>        
+        <p>Please email all submissions to: <a href="mailto:ml.critique.correct@gmail.com" class="btn btn-default btn-xs" role="button">ml.critique.correct@gmail.com</a></p>
+    	</p>
+
+
+
+    	<!--<p class="lead"><strong></strong></p>
+    	<p class="lead">
+  			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Learn more</button>
+  		</p>-->
+    	</div>
+	 </div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Call for Papers</h4>
+      </div>
+      <div class="modal-body">
+      	
+      	<p>The one day NIPS 2018 Workshop on Critiquing and Correcting Trends in Machine Learning calls for papers that critically examine current common practices and/or trends in methodology, datasets, empirical standards, publication models, or any other aspect of machine learning research. Though we are happy to receive papers that bring attention to problems for which there is no clear immediate remedy, we particularly encourage papers which propose a solution or indicate a way forward.  Papers should motivate their arguments by describing gaps in the field. Crucially, this is not a venue for settling scores or character attacks, but for moving machine learning forward as a scientific discipline.</p>
+
+        <p>To help guide submissions, we have split up the call for papers into the follows tracks.  Please indicate the intended track when making your submission.  Papers are welcome from all subfields of machine learning.  If you have a paper which you feel falls within the remit of the workshop but does not clearly fit one of these tracks, please contact the organizers at: ml.critique.correct@gmail.com.</p>
+
+        <p><b>Bad Practices</b> (1-4 pages)<br />
+        Papers that highlight common bad practices or unjustified assumptions at any stage of the research process.  These can either be technical shortfalls in a particular machine learning subfield, or more procedural bad practices of the ilk of those discussed in [17].</p>
+
+        <p><b>Common Misconceptions</b> (3-4 pages)<br/>
+        Papers that call into question commonly held intuitions or provide clear evidence either for or against assumptions that are regularly taken for granted without proper justification. For example, we would like to see papers which provide empirical assessments to test out metrics, verify intuitions, or compare popular current approaches with historic baselines that may have unfairly fallen out of favour (see e.g. [2]).  We would also like to see work which provides results which makes us rethink our intuitions or the assumptions we typically make.</p>
+
+<p><b>Negative Results</b> (3-4 pages)<br />
+Papers which show failure modes of existing algorithms or suggest new approaches which one might expect to perform well but which do not.  The aim of the latter of these is to provide a venue for work which might otherwise go unpublished but which is still of interest to the community, for example by dissuading other researchers from similar ultimately unsuccessful approaches.  Though it is inevitably preferable that papers are able to explain why the approach performs poorly, this is not essential if the paper is able to demonstrate why the negative result is of interest to the community in its own right.</p>
+
+<p><b>Research Process</b> (2-4 pages)<br />
+Papers which provide carefully thought through critiques, provide discussion on or suggest new approaches to areas such as the conference model, the reviewing process, the role of industry in research, open sourcing of code and data, institutional biases and discrimination in the field, research ethics, reproducibility standards, and allocation of conference tickets.  
+
+<p><b>Debates</b> (1-2 pages)
+Short proposition papers which discuss issues either affecting all of machine learning or significantly sized subfields (e.g. reinforcement learning, Bayesian methods, etc).  Selected papers will be used as the basis for instigating online forum debates before the workshop, leading up to live discussions on the day itself.</p>
+
+<p><b>Open Problems</b> (1-2 papers/short talks)<br />
+Papers that describe either (a) unresolved questions in existing fields that need to be addressed (b) desirable operating characteristics for ML in particular application areas that have yet to be achieved or (c) new frontiers of machine learning research that require rethinking current practices (e.g., error diagnosis for when many ML components are inter-operating within a system, automating dataset collection/creation).</p>
+
+      
+      	<h5>Submission Instructions</h5>
+      	<p>Papers should be submitted as pdfs using the <a href="https://nips.cc/Conferences/2018/PaperInformation/StyleFiles" role="button">NIPS LaTeX style file</a>.  Author names do not need to be anonymized and page limits do not include references.  Appendices are allowed after the references but reviewers will not be obliged to read them.</p>      	
+      	<p>Please email all submissions to: <a href="mailto:ml.critique.correct@gmail.com" class="btn btn-default btn-xs" role="button">ml.critique.correct@gmail.com</a></p>
+
+      	<br>
+      	<div class="alert alert-warning" role="alert"><div class="glyphicon glyphicon-exclamation-sign"></div> <u>Deadline</u>: October 23, 2018</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+      
+      	<h2>Abstract</h2>
+      	
+      	<p>Recently there have been calls for making machine learning more reproducible, less hand-tailored, fair, and generally more thoughtful about how research is conducted and put into practice. These are hallmarks of a mature scientific field, and will be crucial for machine learning to have the wide-ranging, positive impact it is expected to have. Without careful consideration, we as a field risk inflating expectations beyond what is possible. To address this, this workshop aims to better understand and to improve all stages of the research process in machine learning.</p>
+<p>A number of recent papers have carefully considered trends in machine learning as well as the needs of the field when used in real-world scenarios [1-18]. Each of these works introspectively analyzes what we often take for granted as a field. Further, many propose solutions for moving forward. The goal of this workshop is to bring together researchers from all subfields of machine learning to highlight open problems and widespread dubious practices in the field, and crucially, to propose solutions. We hope to highlight issues and propose solutions in areas such as: <br />
+- Common practices [1, 8]<br />
+- Implicit technical and empirical assumptions that go unquestioned [2, 3, 5, 7, 11, 12, 13, 17, 18]<br />
+- Shortfalls in publication and reviewing setups [15, 16]<br />
+- Disconnects between research focus and application requirements [9, 10, 14]<br />
+- Surprising observations that make us rethink our research priorities [4, 6]
+</p>
+
+
+
+<p>The workshop program is a collection of invited talks, alongside contributed posters and talks.  For some of these talks, we plan a unique open format of 10 minutes of talk + 10 minutes of follow up discussion. Additionally, a separate panel discussion will collect researchers with a diverse set of viewpoints on the current challenges and potential solutions. During the panel we will also open the conversation to the audience. The discussion will further be open to an online Q&A which will be solicited prior to the workshop. </p>
+<p>A key expected outcome of the workshop is a collection of important open problems at all levels of machine learning research, along with an record of various bad practices that we should no longer consider to be acceptable.  Further, we hope that the workshop will made inroads in how to address these problems, highlighting promising new frontiers for making machine learning practical, robust, reproducible, and fair when applied to real world problems.</p>
+     
+
+<!--08:00 - 08:15   Opening Remarks
+08:15 - 09:30   Invited Talks
+09:30 - 11:10   Contributed Talks and Following Discussions
+11:10 - 12:15   Poster Session
+12:15 - 13:30   Lunch
+13:30 - 14:30   Invited Talks
+14:30 - 15:30   Panel Discussion
+15:30 - 16:00   Coffee Break
+16:00 - 17:15   Invited Talks
+17:15 -     Poster Session 	-->		
+
+<div class="row">
+  <div class="col-md-6">
+    <h3>Schedule <span class="label label-primary">Tentative</span></h3>
+
+      <table class="table">
+      <tbody>
+        <tr>
+          <td>08:30</td>
+          <td><strong>Opening remarks</strong></td>
+          <td>[TBA]</td>
+        </tr>
+        <tr>
+          <td colspan="3"><div class="text-center"><small><strong>On Trends in Machine Learning</strong></small></div></td>
+        </tr>
+         <tr class="active">
+          <td>08:45</td>
+          <td>Invited talks</td>
+          <td>[TBA]</td>
+        <tr style="background: repeating-linear-gradient(45deg, #f5f5f5, #f5f5f5 4px, white 4px, white 10px);">
+          <td>09:30</td>
+          <td colspan="2">Contributed talks</td>
+        </tr>
+        <tr>
+          <td>10:30</td>
+          <td colspan="2"><span class="label label-warning">Coffee break</span></td>
+        </tr>
+        <tr>
+          <td>11:00</td>
+          <td colspan="2"><em>Poster session</em></td>
+          <td></td>
+        </tr>
+       <tr class="warning">
+          <td>12:00</td>
+          <td colspan="2"><strong>Lunch</strong></td>
+        </tr>   
+         <tr class="active">
+          <td>14:00</td>
+          <td>Invited talks</td>
+          <td>[TBA]</td>
+        </tr>
+    	<tr>
+          <td>15:00</td>
+          <td colspan="2"><span class="label label-warning">Coffee break</span></td>
+        </tr>
+    	<tr>
+          <td>15:30</td>
+          <td colspan="2"><em>Panel Discussion</em></td>
+        </tr>
+    	<tr class="active">
+          <td>16:30</td>
+          <td>Invited talks</td>
+          <td>[TBA]</td>
+        </tr>
+        <tr>
+          <td>17:30</td>
+          <td colspan="2"><em>Poster session</em></td>
+        </tr>
+      </tbody>
+    </table>
+    
+</div>
+  <div class="col-md-6">
+	
+	<h3>List of Speakers</h3>
+      <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Affiliation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Suchi Saria</td>
+          <td>Johns Hopkins University</td>
+        </tr>
+         <tr>
+          <td>Charles Sutton</td>
+          <td>University of Edinburgh</td>
+        </tr>
+        <tr>
+          <td>Kim Hazelwood</td>
+          <td>Facebook</td>
+        </tr>
+        <tr>
+          <td>Zach Lipton</td>
+          <td>Carnegie Mellon University</td>
+        </tr>
+        <tr>
+          <td>Finale Doshi-Velez</td>
+          <td>Harvard University</td>
+        </tr>        
+        <tr>
+          <td>Ferenc Huszar</td>
+          <td>Twitter</td>
+        </tr>
+        <tr>
+      </tbody>
+    </table>
+	
+  </div>
+</div>
+
+<h3>Contact </h3>
+<p>Please direct any questions to <a href="ml.critique.correct@gmail.com" class="btn btn-default btn-xs" role="button">ml.critique.correct@gmail.com</a>.</p>
+
+
+
+	<hr>
+
+      <h2>References</h2>
+      
+      <dl class="dl-horizontal">
+      
+      	<dt>[1]</dt>
+	  	<dd> Mania, H., Guy, A., & Recht, B. (2018). Simple random search provides a competitive approach to reinforcement learning. arXiv preprint arXiv:1803.07055.</dd>
+
+      	<dt>[2]</dt>
+	  	<dd>Rainforth, T., Kosiorek, A. R., Le, T. A., Maddison, C. J., Igl, M., Wood, F., & Teh, Y. W. (2018). Tighter variational bounds are not necessarily better. ICML.</dd>
+
+		<dt>[3]</dt>
+	  	<dd>Torralba, A., & Efros, A. A. (2011). Unbiased look at dataset bias. In Computer Vision and Pattern Recognition (CVPR), 2011 IEEE Conference on (pp. 1521-1528). IEEE.</dd>
+
+	  	<dt>[4]</dt>
+	  	<dd>Szegedy, C., Zaremba, W., Sutskever, I., Bruna, J., Erhan, D., Goodfellow, I., & Fergus, R. (2013). Intriguing properties of neural networks. arXiv preprint arXiv:1312.6199.</dd>
+	  	
+	  	<dt>[5]</dt>
+	  	<dd>Mescheder, L., Geiger, A., Nowozin S. (2018) Which Training Methods for GANs do actually Converge? ICML</dd>
+	  	
+	  	<dt>[6]</dt>
+	  	<dd>Daumé III, H. (2009). Frustratingly easy domain adaptation. arXiv preprint arXiv:0907.1815</dd>	  
+
+		<dt>[7]</dt>
+	  	<dd>Urban, G., Geras, K. J., Kahou, S. E., Wang, O. A. S., Caruana, R., Mohamed, A., ... & Richardson, M. (2016). Do deep convolutional nets really need to be deep (or even convolutional)?.</dd>
+	  
+	  	<dt>[8]</dt>
+	  	<dd>Henderson, P., Islam, R., Bachman, P., Pineau, J., Precup, D., & Meger, D. (2017). Deep reinforcement learning that matters. arXiv preprint arXiv:1709.06560.</dd>
+
+      	<dt>[9]</dt>
+	  	<dd>Narayanan, M., Chen, E., He, J., Kim, B., Gershman, S., & Doshi-Velez, F. (2018). How do Humans Understand Explanations from Machine Learning Systems? An Evaluation of the Human-Interpretability of Explanation. arXiv preprint arXiv:1802.00682.</dd>
+	  	
+ 		<dt>[10]</dt>
+	  	<dd>Schulam, S., Saria S. (2017). Reliable Decision Support using Counterfactual Models. NIPS.</dd>
+
+	  	<dt>[11]</dt>
+	  	<dd>Rahimi, A. (2017). Let's take machine learning from alchemy to electricity. Test-of-time award presentation, NIPS. </dd>
+
+      	<dt>[12]</dt>
+	  	<dd>Lucic, M., Kurach, K., Michalski, M., Gelly, S., Bousquet, O. (2018). Are GANs Created Equal? A Large-Scale Study. arXiv preprint arXiv:1711.10337.</dd>
+
+      	<dt>[13]</dt>
+	  	<dd>Le, T.A., Kosiorek, A.R., Siddharth, N., Teh, Y.W. and Wood, F., (2018). Revisiting Reweighted Wake-Sleep. arXiv preprint arXiv:1805.10469.</dd>
+
+      	<dt>[14]</dt>
+	  	<dd>Amodei, D., Olah, C., Steinhardt, J., Christiano, P., Schulman, J. and Mané, D., (2016). Concrete problems in AI safety. arXiv preprint arXiv:1606.06565.</dd>
+      	
+      	<dt>[15]</dt>
+	  	<dd>Sutton, C. (2018) Making unblinding manageable: Towards reconciling prepublication and double-blind review. http://www.theexclusive.org/2017/09/arxiv-double-blind.html</dd>
+
+      	<dt>[16]</dt>
+	  	<dd>Langford, J. (2018) ICML Board and Reviewer profiles. http://hunch.net/?p=8962378</dd>
+
+      	<dt>[17]</dt>
+	  	<dd>Lipton, Zachary C., and Jacob Steinhardt (2018). "Troubling Trends in Machine Learning Scholarship." arXiv preprint arXiv:1807.03341.</dd>
+
+	  	<dt>[18]</dt>
+  		<dd>Kaushik, Divyansh, and Zachary C. Lipton (2018). "How Much Reading Does Reading Comprehension Require? A Critical Investigation of Popular Benchmarks." arXiv preprint arXiv:1808.04926. </dd>
+
+	  	<!--<dt>[19]</dt>
+	  	<dd>Faber F. A., Lindmaa A., von Lilienfeld, O. A., Armiento, R. (2016). <em>Machine learning energies of 2 million elpasolite (A B C 2 D 6) crystals</em>. Phys. Rev. Lett., 117(13), 135502.</dd>
+	  	  	
+	  	<dt>[20]</dt>
+	  	<dd>Gomez-Bombarelli, R., Duvenaud, D., Hernandez-Lobato, J. M., Aguilera-Iparraguirre, J., Hirzel, T. D., Adams, R. P., Aspuru-Guzik, A. (2016). <em>Automatic chemical design using a data-driven continuous representation of molecules</em>. arXiv preprint arXiv:1610.02415.</dd>
+
+	  	<dt>[21]</dt>
+	  	<dd>Wei, J. N., Duvenaud, D, Aspuru-Guzik, A. (2016). <em>Neural networks for the prediction of organic chemistry reactions</em>. ACS Cent. Sci., 2(10), 725-732.</dd>
+	  	
+	  	<dt>[22]</dt>
+	  	<dd>Sadowski, P., Fooshee, D., Subrahmanya, N., Baldi, P. (2016). <em>Synergies between quantum mechanics and machine learning in reaction prediction</em>. J. Chem. Inf. Model., 56(11), 2125-2128.</dd>
+
+	  	<dt>[23]</dt>
+	  	<dd>Lee, A. A., Brenner, M. P., Colwell L. J. (2016). <em>Predicting protein-ligand affinity with a random matrix framework</em>. Proc. Natl. Acad. Sci., 113(48), 13564-13569.</dd>
+
+	  	<dt>[24]</dt>
+	  	<dd>Behler, J. (2016). <em>Perspective: Machine learning potentials for atomistic simulations</em>. J. Chem. Phys., 145(17), 170901.</dd>
+
+	  	<dt>[25]</dt>
+	  	<dd>De, S., Bartók, A. P., Csányi, G., Ceriotti, M. (2016). <em>Comparing molecules and solids across structural and alchemical space</em>. Phys. Chem. Chem. Phys., 18(20), 13754-13769.</dd>
+
+      	<dt>[26]</dt>
+	  	<dd>Schütt, K. T., Arbabzadah, F., Chmiela, S., Müller, K.-R., Tkatchenko, A. (2017). <em>Quantum-chemical insights from deep tensor neural networks</em>. Nat. Commun., 8, 13890.</dd>
+
+	  	<dt>[27]</dt>
+	  	<dd>Segler, M. H., Waller, M. P. (2017). <em>Neural‐symbolic machine learning for retrosynthesis and reaction prediction</em>. ‎Chem. Eur. J., 23(25), 5966-5971.</dd>
+
+	  	<dt>[28]</dt>
+	  	<dd>Kusner, M. J., Paige, B., Hernández-Lobato, J. M. (2017). <em>Grammar variational autoencoder</em>. arXiv preprint arXiv:1703.01925.</dd>
+
+	  	<dt>[29]</dt>
+  		<dd>Coley, C. W., Barzilay, R., Jaakkola, T. S., Green, W. H., Jensen K. F. (2017). <em>Prediction of organic reaction outcomes using machine learning</em>. ACS Cent. Sci., 3(5), 434-443.</dd>
+
+	  	<dt>[30]</dt>
+	  	<dd>Altae-Tran, H., Ramsundar, B., Pappu, A. S., Pande, V. (2017). <em>Low data drug discovery with one-shot learning</em>. ACS Cent. Sci., 3(4), 283-293.</dd>
+
+	  	<dt>[31]</dt>
+	  	<dd>Gilmer, J., Schoenholz, S. S., Riley, P. F., Vinyals, O., Dahl, G. E. (2017). <em>Neural message passing for quantum chemistry</em>. arXiv preprint arXiv:1704.01212.</dd>
+
+	  	<dt>[32]</dt>
+	  	<dd>Chmiela, S., Tkatchenko, A., Sauceda, H. E., Poltavsky, Igor, Schütt, K. T., Müller, K.-R. (2017). <em>Machine learning of accurate energy-conserving molecular force fields</em>. Sci. Adv., 3(5), e1603015.</dd>
+
+	  	<dt>[33]</dt>
+	  	<dd>Ju, S., Shiga T., Feng L., Hou Z., Tsuda, K., Shiomi J. (2017). <em>Designing nanostructures for phonon transport via bayesian optimization</em>. Phys. Rev. X, 7(2), 021024.</dd>
+
+	  	<dt>[34]</dt>
+	  	<dd>Ramakrishnan, R, von Lilienfeld, A. (2017). <em>Machine learning, quantum chemistry, and chemical space</em>. Reviews in Computational Chemistry, 225-256.</dd>
+
+	  	<dt>[35]</dt>
+	  	<dd>Hernandez-Lobato, J. M., Requeima, J., Pyzer-Knapp, E. O., Aspuru-Guzik, A. (2017). <em>Parallel and distributed Thompson sampling for large-scale accelerated exploration of chemical space</em>. arXiv preprint arXiv:1706.01825.</dd>
+
+	  	<dt>[36]</dt>
+	  	<dd>Smith, J., Isayev, O., Roitberg, A. E. (2017). <em>ANI-1: an extensible neural network potential with DFT accuracy at force field computational cost</em>. Chem. Sci., 8(4), 3192-3203.</dd>
+
+	  	<dt>[37]</dt>
+	  	<dd>Brockherde, F., Li, L., Burke, K., Müller, K.-R. <em>By-passing the Kohn-Sham equations with machine learning</em>. Nat. Commun., 8, 872.</dd>
+
+		<dt>[38]</dt>
+		<dd>Schütt, K. T., Kindermans, P. J., Sauceda, H. E., Chmiela, S., Tkatchenko, A., Müller, K. R. (2017). <em>MolecuLeNet: A continuous-filter convolutional neural network for modeling quantum interactions</em>. NIPS 2017.</dd>
+
+		<dt>[39]</dt>
+	  	<dd>Chmiela, S., Sauceda, H. E., Müller, K.-R., Tkatchenko, A. <em>Towards Exact Molecular Dynamics Simulations with Machine-Learned Force Fields</em>. Nat. Commun., accepted</dd>
+
+-->
+	  </dl>
+    </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
