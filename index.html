@@ -246,7 +246,7 @@ Papers that describe either (a) unresolved questions in existing fields that nee
         <tr class="active">
           <td>11:35</td>
           <td>Invited talk</td>
-          <td><span style="color: #dddddd">TBA</span></td>
+          <td>Knowing when not to trust: Reliable Prediction by Leveraging Causal Mechanisms <button style="outline: 0; border: 0;" type="button" class="label label-default" data-toggle="modal" data-target="#suchiModal">Abstract</button></td>
           <td>Suchi Saria</td>
          </tr>
        <tr class="warning">
@@ -439,6 +439,23 @@ Papers that describe either (a) unresolved questions in existing fields that nee
       </div>
       <div class="modal-body">
       <p>As a research community we should strive for research progress of the community as a whole. To understand progress I will discuss a simple model of a research frontier that we advance, and then discuss the biggest challenge that I see for certain areas of the ML community, namely a lack of signal on whether progress is made due to the lack of a common task framework.</p>
+     </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="suchiModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Are we making progress?</h4>
+      </div>
+      <div class="modal-body">
+      <p>Predictive models can fail to generalize from training to deployment environments because of "dataset shift", posing a threat to model reliability in practice. As opposed to methods which use samples from the target distribution to reactively correct dataset shift, we propose using graphical knowledge of the causal mechanisms relating variables in a prediction problem to proactively correct for relationships that do not generalize across environments. In this talk, I will define how one can leverage the data generating process to (1) characterize dataset shift, (2) identify whether a given model is likely to be invariant to given sets of shifts, and (3) describe methods that protect against these shifts to yield reliable prediction models. I will connect how the proposed framework relates to existing work in domain adaptation and distributional robustness.</p>
      </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
